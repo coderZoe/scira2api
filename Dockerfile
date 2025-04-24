@@ -20,7 +20,7 @@ RUN go mod download
 COPY . .
 
 # 编译应用
-RUN GOOS=linux go build -a -installsuffix cgo -o scira .
+RUN GOOS=linux go build -a -installsuffix cgo -o scira2api .
 
 # 运行阶段
 FROM alpine:3.18
@@ -38,7 +38,7 @@ RUN adduser -D -g '' appuser
 WORKDIR /app
 
 # 从构建阶段复制编译好的应用和必要的文件
-COPY --from=builder /app/scira .
+COPY --from=builder /app/scira2api .
 COPY --from=builder /app/config/ ./config/
 
 # 切换到非root用户
@@ -48,4 +48,4 @@ USER appuser
 EXPOSE 8080
 
 # 应用启动命令
-CMD ["./scira"] 
+CMD ["./scira2api"] 
