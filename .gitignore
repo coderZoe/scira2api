@@ -84,3 +84,5 @@ Thumbs.db
 *.txt
 data.db
 *_test.go
+
+*_debug_bin*
