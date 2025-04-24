@@ -1,0 +1,86 @@
+# Golang 特定忽略项
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# 二进制文件
+bin/
+build/
+
+# 依赖目录
+vendor/
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+
+# IDE 和编辑器文件
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+
+# 配置文件（可能包含敏感信息）
+*.env
+*.env.local
+config.yaml
+config.yml
+secrets.yaml
+secrets.yml
+
+# 缓存和临时目录
+.cache/
+tmp/
+
+# 测试覆盖率报告
+coverage.txt
+coverage.html
+
+# 数据库文件
+*.db
+*.sqlite
+
+# 编译生成的协议缓冲区文件
+*.pb.go
+
+# 自动生成的文件
+*_gen.go
+*_string.go
+
+# 特定于操作系统的文件
+.DS_Store
+Thumbs.db
+
+# 证书和密钥文件
+*.pem
+*.key
+*.crt
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+
+# 大文件或二进制数据文件
+*.dump
+*.large
+*.bin
+
+# 特定于项目的忽略项（根据需要添加）
+# example_specific_file.go
+# example_specific_directory/
+*.txt
+data.db
+*_test.go

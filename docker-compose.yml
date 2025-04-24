@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # Scira应用服务
+  scira:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: scira:latest
+    container_name: scira-app
+    restart: always
+    ports:
+      - "80:8080"
+    environment:
+      TZ: Asia/Shanghai
+      UserIds: xxx,yyy
+    networks:
+      - scira-network
+
+# 定义网络
+networks:
+  scira-network:
+    driver: bridge 
