@@ -10,6 +10,6 @@ services:
     container_name: scira2api
     restart: always
     ports:
-      - "8086:8086"
+      - "8080:8080"
     environment:
       USERIDS: xxx,yyy
