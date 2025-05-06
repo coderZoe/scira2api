@@ -98,25 +98,25 @@ Example `.env`:
 
 ```yaml
 # Required, separate multiple userIds with English commas
-UserIds= xxx,yyy
+USERIDS= xxx,yyy
 
-# Optional, Port. Default: 8080
-Port=8080
+# Optional, PORT. Default: 8080
+PORT=8080
 
 # Optional, API key for authenticating client requests (e.g., the key entered for openweb-ui requests). If empty, no authentication is required.
-ApiKey=sk-xxx
+APIKEY=sk-xxx
 
 # Optional, Proxy address. Default: No proxy is used.
 HTTP_PROXY= http://127.0.0.1:7890
 
 # Optional, List of models, separated by English commas.
-Models=gpt-4.1-mini,claude-3-7-sonnet,grok-3-mini,qwen-qwq
+MODELS=gpt-4.1-mini,claude-3-7-sonnet,grok-3-mini,qwen-qwq
 
 # Optional, Number of retry attempts on request failure. 0 or 1 means no retry. Default: 0 (no retry). A different userId will be used for each retry.
-Retry=3
+RETRY=3
 
 # Optional, Whether to delete chat history on the page. Default: false (do not delete).
-ChatDelete=true
+CHAT_DELETE=true
 ```
 
 A sample configuration file is provided as `.env.example` in the repository.
